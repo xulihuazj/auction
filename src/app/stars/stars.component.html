@@ -1,0 +1,7 @@
+<p>
+  <!--如果star 变量是true 类属性，起作用，变量是false，类属性不起作用-->
+  <span *ngFor="let star of stars" class="glyphicon glyphicon-star glyphicon-star-empty" aria-hidden="true"
+        [class.glyphicon-star-empty]="star">
+    <span>{{rating}}星</span>
+  </span>
+</p>
